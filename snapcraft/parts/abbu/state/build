@@ -1,0 +1,75 @@
+assets:
+  build-packages:
+  - python3-venv
+  - findutils
+  - python3-dev
+  build-snaps: []
+  installed-packages: []
+  installed-snaps:
+  - bare=5
+  - core20=2496
+  - core22=1748
+  - core24=739
+  - gtk-common-themes=1535
+  - lxd=32455
+  - snapcraft=13601
+  - snapd=23545
+  - sublime-text=196
+  - telegram-desktop=6529
+  uname: 'Linux 6.11.2-amd64 #1 SMP PREEMPT_DYNAMIC Kali 6.11.2-1kali1 (2024-10-15)
+    x86_64 unknown unknown GNU/Linux'
+directories: !!set {}
+files: !!set {}
+overlay_hash: 6554e32fa718d54160d0511b36f81458e4cb2357
+part_properties:
+  after: []
+  build-attributes: []
+  build-environment: []
+  build-packages: []
+  build-snaps: []
+  disable-parallel: false
+  organize: {}
+  overlay:
+  - '*'
+  overlay-packages: []
+  overlay-script: null
+  override-build: null
+  override-prime: null
+  override-pull: null
+  override-stage: null
+  permissions: []
+  plugin: python
+  prime:
+  - '*'
+  python-constraints: []
+  python-packages:
+  - pip
+  - setuptools
+  - wheel
+  python-requirements: []
+  source: .
+  source-branch: ''
+  source-checksum: ''
+  source-commit: ''
+  source-depth: 0
+  source-subdir: ''
+  source-submodules: null
+  source-tag: ''
+  source-type: ''
+  stage:
+  - '*'
+  stage-packages:
+  - python3
+  stage-snaps: []
+project_options:
+  application_name: snapcraft
+  arch_triplet: x86_64-linux-gnu
+  project_vars:
+    grade:
+      updated: false
+      value: stable
+    version:
+      updated: false
+      value: '1.0'
+  project_vars_part_name: null
+  target_arch: amd64

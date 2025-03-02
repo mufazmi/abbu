@@ -1,0 +1,11 @@
+{
+    "name": "abbu",
+    "version": "1.0.7",
+    "description": "A module generator CLI",
+    "main": "bin/index.js",
+    "bin": {
+      "abbu": "./bin/index.js"
+    },
+    "dependencies": {}
+  }
+  

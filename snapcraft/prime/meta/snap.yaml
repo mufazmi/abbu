@@ -1,0 +1,19 @@
+name: abbu
+version: '1.0'
+summary: ABBU - Node.js Project Setup Tool
+description: |
+  ABBU is a CLI tool to generate Node.js modules quickly.
+  You can create controllers, routes, services, models, and validations.
+architectures:
+- amd64
+base: core22
+apps:
+  abbu:
+    command: bin/index.py
+    plugs:
+    - home
+confinement: strict
+grade: stable
+environment:
+  LD_LIBRARY_PATH: ${SNAP_LIBRARY_PATH}${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}:$SNAP/lib
+  PATH: $SNAP/usr/sbin:$SNAP/usr/bin:$SNAP/sbin:$SNAP/bin:$PATH
